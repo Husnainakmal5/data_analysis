@@ -1,11 +1,11 @@
-##1. Impoting DataSet
+## 1. Impoting DataSet
 
 Data Acquisition from [Here](https://archive.ics.uci.edu/ml/machine-learning-databases/autos/imports-85.data)
 Reading Data
 Adding Header
 Save Dataset using **df.to_csv()**
 
-##2. Pre-Processing
+## 2. Pre-Processing
 
 ### Missing Data
 **Steps for working with missing data:**
@@ -42,7 +42,7 @@ Binning is a process of transforming continuous numerical variables into discret
 ### Indicator variable (or dummy variable)
 An indicator variable (or dummy variable) is a numerical variable used to label categories. They are called 'dummies' because the numbers themselves do not have inherent meaning.
 
-##3. Exploratory Data Analysis
+## 3. Exploratory Data Analysis
 Data Acquisition from [Here](https://ibm.box.com/shared/static/q6iiqb1pd7wo8r3q28jvgsrprzezjqk3.csv)
 
 ### Continuous numerical variables
@@ -82,7 +82,7 @@ The Analysis of Variance (ANOVA) is a statistical method used to test whether th
 
 If our price variable is strongly correlated with the variable we are analyzing, expect ANOVA to return a sizeable F-test score and a small p-value.
 
-##4. Model Development
+## 4. Model Development
 
 ### Linear Regression
 One example of a Data Model that we will be using is Simple Linear Regression. Simple Linear Regression is a method to help us understand the relationship between two variables:
