@@ -1,8 +1,11 @@
 ## 1. Impoting DataSet
 
 Data Acquisition from [Here](https://archive.ics.uci.edu/ml/machine-learning-databases/autos/imports-85.data)
+
 Reading Data
+
 Adding Header
+
 Save Dataset using **df.to_csv()**
 
 ## 2. Pre-Processing
@@ -11,18 +14,27 @@ Save Dataset using **df.to_csv()**
 **Steps for working with missing data:**
 
 identify missing data
+
 deal with missing data
+
 correct data format
 
 **Deal with missing data**
+
 How to deal with missing data?
 
 1. drop data 
+
     a. drop the whole row
+    
     b. drop the whole column
+    
 2. replace data
+
     a. replace it by mean
+    
     b. replace it by frequency
+    
     c. replace it based on other functions
     
 ### Data Standardization
@@ -32,8 +44,11 @@ Standardization is the process of transforming data into a common format which a
 Normalization is the process of transforming values of several variables into a similar range.
 
 There are several different techniques for Normalization e.g.
+
 'Simple feature scaling'  **X**new=**X**old/**X**max 
+
 'Min-Max'                 **X**new=(**X**old-**X**min)/(**X**max--**X**min)
+
 'Z-score'                 **X**new=(**X**old-μ)/σ
 
 ### Binning
@@ -58,7 +73,9 @@ Continuous numerical variables are variables that may contain any value within s
 The Pearson Correlation measures the linear dependence between two variables X and Y. The resulting coefficient is a value between -1 and 1 inclusive, where:
 
  1: total positive linear correlation,
+ 
  0: no linear correlation, the two variables most likely do not affect each other
+ 
 -1: total negative linear correlation.
 
 
@@ -67,8 +84,11 @@ The Pearson Correlation measures the linear dependence between two variables X a
 By convention, when the
 
 p-value is < 0.001 we say there is strong evidence that the correlation is significant,
+
 the p-value is < 0.05; there is moderate evidence that the correlation is significant,
+
 the p-value is < 0.1; there is weak evidence that the correlation is significant, and
+
 the p-value is > 0.1; there is no evidence that the correlation is significant.
 
 ### ANOVA
@@ -88,10 +108,13 @@ If our price variable is strongly correlated with the variable we are analyzing,
 One example of a Data Model that we will be using is Simple Linear Regression. Simple Linear Regression is a method to help us understand the relationship between two variables:
 
 The predictor/independent variable (X)
+
 The response/dependent variable (that we want to predict)(Y)
+
 The result of Linear Regression is a linear function that predicts the response (dependent) variable as a function of the predictor (independent) variable.
 
 𝑌:𝑅𝑒𝑠𝑝𝑜𝑛𝑠𝑒 𝑉𝑎𝑟𝑖𝑎𝑏𝑙𝑒
+
 𝑋:𝑃𝑟𝑒𝑑𝑖𝑐𝑡𝑜𝑟 𝑉𝑎𝑟𝑖𝑎𝑏𝑙𝑒𝑠
 
 **Linear function:**
@@ -99,20 +122,31 @@ The result of Linear Regression is a linear function that predicts the response 
 **𝑌=a+bX**
 
 a refers to the intercept of the regression, in other words: the value of Y when X is 0
+
 b refers to the slope of the regression line, in other words: the value with which Y changes when X increases by 1.
 
 ### Multiple Linear Regression
+
 ** 𝑌=𝑎+𝑏1𝑋1+𝑏2𝑋2+𝑏3𝑋3+𝑏4𝑋4 **
+
 𝑌:𝑅𝑒𝑠𝑝𝑜𝑛𝑠𝑒 𝑉𝑎𝑟𝑖𝑎𝑏𝑙𝑒
+
 𝑋1:𝑃𝑟𝑒𝑑𝑖𝑐𝑡𝑜𝑟 𝑉𝑎𝑟𝑖𝑎𝑏𝑙𝑒 1
+
 𝑋2:𝑃𝑟𝑒𝑑𝑖𝑐𝑡𝑜𝑟 𝑉𝑎𝑟𝑖𝑎𝑏𝑙𝑒 2
+
 𝑋3:𝑃𝑟𝑒𝑑𝑖𝑐𝑡𝑜𝑟 𝑉𝑎𝑟𝑖𝑎𝑏𝑙𝑒 3
+
 𝑋4:𝑃𝑟𝑒𝑑𝑖𝑐𝑡𝑜𝑟 𝑉𝑎𝑟𝑖𝑎𝑏𝑙𝑒 4
 
 𝑎:𝑖𝑛𝑡𝑒𝑟𝑐𝑒𝑝𝑡
+
 𝑏1:𝑐𝑜𝑒𝑓𝑓𝑖𝑐𝑖𝑒𝑛𝑡𝑠 𝑜𝑓 𝑉𝑎𝑟𝑖𝑎𝑏𝑙𝑒 1
+
 𝑏2:𝑐𝑜𝑒𝑓𝑓𝑖𝑐𝑖𝑒𝑛𝑡𝑠 𝑜𝑓 𝑉𝑎𝑟𝑖𝑎𝑏𝑙𝑒 2
+
 𝑏3:𝑐𝑜𝑒𝑓𝑓𝑖𝑐𝑖𝑒𝑛𝑡𝑠 𝑜𝑓 𝑉𝑎𝑟𝑖𝑎𝑏𝑙𝑒 3
+
 𝑏4:𝑐𝑜𝑒𝑓𝑓𝑖𝑐𝑖𝑒𝑛𝑡𝑠 𝑜𝑓 𝑉𝑎𝑟𝑖𝑎𝑏𝑙𝑒 4
 
 ### Polynomial Regression and Pipelines
@@ -128,6 +162,7 @@ Data Pipelines simplify the steps of processing the data. We use the module Pipe
 Two very important measures that are often used in Statistics to determine the accuracy of a model are:
 
 **R^2 / R-squared**
+
 **Mean Squared Error (MSE)**
 
 **R-squared**
@@ -139,5 +174,6 @@ R squared, also known as the coefficient of determination, is a measure to indic
 The Mean Squared Error measures the average of the squares of errors, that is, the difference between actual value (y) and the estimated value (ŷ).
 
 **the model with the higher R-squared value is a better fit**
+
 **the model with the smallest MSE value is a better fit**
 
